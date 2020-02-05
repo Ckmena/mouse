@@ -5,7 +5,6 @@
 4. start a project command line : scrapy startproject movies_cms
 5. set up items 
 6. set up spiders : in spider folder create a file ""_spider.py 
-
-
-
-
+7. seting spider 
+in command line go to dc first _cms folder 
+8. command line : scrapy crawl movie -t json -o - > items.json " it will create a json file with the imfo we ask for  
