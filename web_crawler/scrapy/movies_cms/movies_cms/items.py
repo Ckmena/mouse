@@ -16,4 +16,8 @@ class MoviesCmsItem(scrapy.Item):
     image = scrapy.Field()
     year = scrapy.Field()
     story = scrapy.Field()
+<<<<<<< HEAD
+=======
+    ## Implement the image ??
+>>>>>>> ed9496ec1e9ce0fefed0130b68d501b860798112
     pass

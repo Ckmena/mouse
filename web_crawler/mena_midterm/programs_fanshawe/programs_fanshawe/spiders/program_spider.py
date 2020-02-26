@@ -21,7 +21,7 @@ class ProgramsFanshawe(CrawlSpider):
         program_item['program_code'] = response.css('.views-field-field-program-code div::text').get().strip()
         program_item['academic_school'] = response.css('.field-name-field-academic-school a::text').get().strip()
         program_item['program_coordinator'] = response.css('.field-name-field-program-coordinator p::text').get().strip()
-        # program_item['duration'] = response.css('p::text')[1].get().strip()
+        program_item['duration'] = response.css('.views-field-field-duration-next div::text').get().strip()
         yield program_item
         
         # https://www.fanshawec.ca/programs/

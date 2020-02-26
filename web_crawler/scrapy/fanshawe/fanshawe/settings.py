@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for movies_cms project
+# Scrapy settings for fanshawe project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,29 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'movies_cms'
+BOT_NAME = 'fanshawe'
 
-SPIDER_MODULES = ['movies_cms.spiders']
-NEWSPIDER_MODULE = 'movies_cms.spiders'
-
-
-<<<<<<< HEAD
-=======
-# Mongo
-# To turn on Mongo
-ITEM_PIPELINES = {'movies_cms.pipelines.MoviesCmsPipeline': 1}
-
-MONGODB_SERVER = "localhost"
-MONGODB_PORT = 8099
-MONGODB_DB = "movies_cms"
-MONGODB_COLLECTION = "movies"
-MONGODB_USER = "root"
-MONGODB_PASS = "example"
+SPIDER_MODULES = ['fanshawe.spiders']
+NEWSPIDER_MODULE = 'fanshawe.spiders'
 
 
->>>>>>> ed9496ec1e9ce0fefed0130b68d501b860798112
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'movies_cms (+http://www.yourdomain.com)'
+#USER_AGENT = 'fanshawe (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -54,7 +39,6 @@ ROBOTSTXT_OBEY = True
 #TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-<<<<<<< HEAD
 #DEFAULT_REQUEST_HEADERS = {
 #   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
 #   'Accept-Language': 'en',
@@ -63,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'movies_cms.middlewares.MoviesCmsSpiderMiddleware': 543,
+#    'fanshawe.middlewares.FanshaweSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'movies_cms.middlewares.MoviesCmsDownloaderMiddleware': 543,
+#    'fanshawe.middlewares.FanshaweDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -81,38 +65,8 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'movies_cms.pipelines.MoviesCmsPipeline': 300,
+#    'fanshawe.pipelines.FanshawePipeline': 300,
 #}
-=======
-# DEFAULT_REQUEST_HEADERS = {
-#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'en',
-# }
-
-# Enable or disable spider middlewares
-# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-# SPIDER_MIDDLEWARES = {
-#    'movies_cms.middlewares.MoviesCmsSpiderMiddleware': 543,
-# }
-
-# Enable or disable downloader middlewares
-# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-# DOWNLOADER_MIDDLEWARES = {
-#    'movies_cms.middlewares.MoviesCmsDownloaderMiddleware': 543,
-# }
-
-# Enable or disable extensions
-# See https://docs.scrapy.org/en/latest/topics/extensions.html
-# EXTENSIONS = {
-#    'scrapy.extensions.telnet.TelnetConsole': None,
-# }
-
-# Configure item pipelines
-# See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'movies_cms.pipelines.MoviesCmsPipeline': 300,
-# }
->>>>>>> ed9496ec1e9ce0fefed0130b68d501b860798112
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
