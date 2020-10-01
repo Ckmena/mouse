@@ -10,8 +10,8 @@ body {
 
 
 /*
-   * Sidebar
-   */
+ * Sidebar
+ */
 
 .sidebar {
     position: fixed;
@@ -68,8 +68,8 @@ body {
 
 
 /*
-   * Content
-   */
+ * Content
+ */
 
 [role="main"] {
     padding-top: 133px;
@@ -85,8 +85,8 @@ body {
 
 
 /*
-   * Navbar
-   */
+ * Navbar
+ */
 
 .navbar-brand {
     padding-top: .75rem;

@@ -12,7 +12,7 @@
 
 <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">Company name</a>
         <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
@@ -27,62 +27,58 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <span data-feather="home"></span> Dashboard <span class="sr-only">(current)</span>
+                            <a class="nav-link {% if index %} active {% endif %}" href="/">
+                                <span data-feather="home"></span> Home
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file"></span> Orders
+                        <li class="nav-item ">
+                            <a class="nav-link {% if line_chart %} active {% endif %}" href="/line-chart">
+                                <span data-feather="bar-chart"></span> Line Chart
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="shopping-cart"></span> Products
+                        <li class="nav-item ">
+                            <a class="nav-link {% if pie_chart %} active {% endif %} " href="/pie-chart ">
+                                <span data-feather="pie-chart"></span> Pie Chart
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="users"></span> Customers
+                        <li class="nav-item ">
+                            <a class=" nav-link {% if bubble_chart %} active {% endif %} " href="/bubble-chart ">
+                                <span data-feather="disc"></span> Bubble Chart
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="bar-chart-2"></span> Reports
+                        <li class="nav-item ">
+                            <a class=" nav-link{% if bar_chart %} active{%endif%} " href="/bar-chart ">
+                                <span data-feather="bar-chart-2"></span> Bar Chart
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="layers"></span> Integrations
-                            </a>
-                        </li>
+
                     </ul>
 
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted ">
                         <span>Saved reports</span>
-                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
-                            <span data-feather="plus-circle"></span>
+                        <a class="d-flex align-items-center text-muted " href="# " aria-label="Add a new report ">
+                            <span data-feather="plus-circle "></span>
                         </a>
                     </h6>
-                    <ul class="nav flex-column mb-2">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span> Current month
+                    <ul class="nav flex-column mb-2 ">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# ">
+                                <span data-feather="file-text "></span> Current month
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span> Last quarter
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# ">
+                                <span data-feather="file-text "></span> Last quarter
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span> Social engagement
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# ">
+                                <span data-feather="file-text "></span> Social engagement
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span> Year-end sale
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# ">
+                                <span data-feather="file-text "></span> Year-end sale
                             </a>
                         </li>
                     </ul>
@@ -93,12 +89,14 @@
         </div>
     </div>
 
+
     <script src="{{ url_for('static', filename='node_modules/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='node_modules/bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='node_modules/feather-icons/dist/feather.min.js') }}"></script>
     <script src="{{ url_for('static', filename='node_modules/chart.js/dist/Chart.min.js') }}"></script>
 
     <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+    <!-- <script src="{{ url_for( 'static', filename='js/basic_charts.js' ) }} "></script> -->
 </body>
 
 </html>
